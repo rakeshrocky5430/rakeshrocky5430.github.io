@@ -1,0 +1,528 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.scroll-up{
+    position: fixed;
+    width: 42px;
+    background-color: crimson;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.navbar{
+    transition: all 0.3s ease;
+}
+li {
+    margin-right: 30px;
+}
+.typing-demo {
+    color:crimson;
+    width: 16ch;
+    animation: typing 4s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+   animation-iteration-count: infinite;
+    
+    }  
+    @keyframes typing {
+        from {
+      width: 10px;
+    }
+  }      
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+div a {
+    color: white;
+    transition: all 0.3s ease;
+}        
+div a:hover {
+    color: white;
+    transition: all 0.3s ease;
+}
+
+body {
+    background-image: url(./img/PicsArt.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 1366px 625px;            
+}
+
+#Profile {
+    color: white;
+    margin: 140px;
+}
+
+section,#About {
+    min-height: 400px;
+}
+section a {
+    color: white;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 10px;
+    background-color: black;
+    text-decoration: none;
+}
+li::after{
+    content:"";
+    width: 0;
+    height: 2px;
+    display: block;
+    background-color: yellow;
+    margin: auto;
+    transition: .5s;
+}
+li:hover::after{
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+#About h1::before {
+    content: "";
+    position: absolute;
+    width: 198px;
+    height: 3px;
+    margin-top: 65px;
+    background: black;
+}
+#About h1::after {
+    content: "who i am";
+    color: crimson;
+    font-size: 20px;
+    position: absolute;
+    left: 46.5%;
+    display: block;
+    background: white;
+    padding: 4px;
+}
+.pic{
+    margin-left: 25%;
+}
+.img{
+    width: 220px;
+    height: 400px;
+}
+
+input :hover {
+    outline-color: crimson;
+}
+
+#Services {
+    min-height: 550px;
+    background: black;
+    color: white;
+}
+#Services h1::before {
+    content: "";
+    position: absolute;
+    width: 205px;
+    height: 3px;
+    margin-top: 65px;
+    background: white;
+    margin-left: 16px;
+}
+#Services h1::after {
+    content: "what i provide";
+    color: crimson;
+    font-size: 20px;
+    position: absolute;
+    left: 45%;
+    display: block;
+    background: black;
+    padding: 4px;
+}
+.card{
+    background-color: lightgray;
+}
+.card:hover{
+    background: crimson;
+}        
+/* Skills*/
+#Skills {
+    min-height: 480px;
+}
+#Skills h1::before {
+    content: "";
+    position: absolute;
+    width: 173px;
+    height: 3px;
+    margin-top: 65px;
+    background: black;
+    margin-left: -1px;
+}
+
+#Skills h1::after {
+    content: "what i know";
+    color: crimson;
+    font-size: 20px;
+    position: absolute;
+    left: 45.5%;
+    display: block;
+    background: white;
+    padding: 4px;
+}
+.courses{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.line-html{
+    position: relative;
+    width: 500px;
+    height: 5px;
+    background-color: lightgray;
+}
+.line-html::before{
+    content: "";
+    position: absolute;
+    width: 450px;
+    height:5px;
+    background-color: crimson;
+}
+.line-css{
+    position: relative;
+    width: 500px;
+    height: 5px;
+    background-color: lightgray;
+}
+.line-css::before{
+    content: "";
+    position: absolute;
+    width: 425px;
+    height:5px;
+    background-color: crimson;
+}
+.line-bootstrap{
+    position: relative;
+    width: 500px;
+    height: 5px;
+    background-color: lightgray;
+}
+.line-bootstrap::before{
+    content: "";
+    position: absolute;
+    width: 425px;
+    height:5px;
+    background-color: crimson;
+}
+.line-java{
+    position: relative;
+    width: 500px;
+    height: 5px;
+    background-color: lightgray;
+}
+.line-java::before{
+    content: "";
+    position: absolute;
+    width: 400px;
+    height:5px;
+    background-color: crimson;
+}
+.line-phython{
+    position: relative;
+    width: 500px;
+    height: 5px;
+    background-color: lightgray;
+}
+.line-phython::before{
+    content: "";
+    position: absolute;
+    width: 350px;
+    height:5px;
+    background-color: crimson;
+}
+#Project {
+    min-height: 500px;
+    background: black;
+    color: white;
+}
+#Project h1::before {
+    content: "";
+    position: absolute;
+    width: 155px;
+    height: 3px;
+    margin-top: 65px;
+    background: white;
+    margin-left: 45px;
+}
+#Project h1::after{
+    content: "what i did";
+    color: crimson;
+    font-size: 20px;
+    position: absolute;
+    left: 46.8%;
+    display: block;
+    background:black;
+    padding: 4px;
+}     
+#contact h1::before {
+    content: "";
+    position: absolute;
+    width: 195px;
+    height: 3px;
+    margin-top: 65px;
+    background: black;
+    margin-left: 21px;
+}
+#contact h1::after{
+    content: "get in touch";
+    color: crimson;
+    font-size: 20px;
+    position: absolute;
+    left: 45.4%;
+    display: block;
+    background: white;
+    padding: 4px;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+footer a:hover{
+    text-decoration: none;
+}
+@media (max-width:1125px) {         
+    #About h1::after {
+        left: 45.4%;
+    }
+    #Services h1::after {            
+        left: 43.8%;            
+    }
+    #Skills h1::after {            
+        left: 44.6%;            
+    }
+    #Project h1::after{
+        left: 45.9%;
+    }
+    #contact h1::after{
+        left: 44.4%;
+    }
+    
+}
+@media (max-width:1000px) {         
+    #About h1::after {
+        left: 44.8%;
+    }
+    #Services h1::after {            
+        left: 42.9%;            
+    }
+    #Skills h1::after {            
+        left: 43.9%;            
+    }
+    #Project h1::after{
+        left: 45.4%;
+    }
+    #contact h1::after{
+        left: 43.6%;
+    }
+    
+}
+@media (max-width:827px) {         
+    #About h1::after {
+        left: 43.5%;
+    }
+    #Services h1::after {            
+        left: 41.6%;            
+    }
+    #Skills h1::after {            
+        left: 42.5%;            
+    }
+    #Project h1::after{
+        left: 44.2%;
+    }
+    #contact h1::after{
+        left: 42.1%;
+    }
+    
+}
+@media (max-width:675px) {         
+    #About h1::after {
+        left: 41.9%;
+    }
+    .pic{
+        margin-left: 20%;
+    }
+    #Services h1::after {            
+        left: 39.5%;            
+    }
+    #Skills h1::after {            
+        left: 40.8%;            
+    }
+    #Project h1::after{
+        left: 43.1%;
+    }
+    #contact h1::after{
+        left: 40.4%;
+    }
+    
+}
+@media (max-width:604px) {         
+    #About h1::after {
+        left: 41%;
+    }
+    .pic{
+        margin-left: 15%;
+    }
+    #Services h1::after {            
+        left: 38.2%;            
+    }
+    #Skills h1::after {            
+        left: 39.9%;            
+    }
+    .line-html{            
+        width: 420px;
+    }
+    .line-html::before{            
+        width: 378px;            
+    }
+    .line-css{            
+        width: 420px;            
+    }
+    .line-css::before{
+        width: 357px;
+    }
+    .line-bootstrap{
+        width: 420px;
+    }
+    .line-bootstrap::before{
+        width: 357px;
+    }
+    .line-java{
+        width: 420px;
+    }
+    .line-java::before{
+        width: 336px;
+    }
+    .line-phython{
+        width: 420px;
+    }
+    .line-phython::before{
+        width: 273px;
+    }
+    #Project h1::after{
+        left: 42.5%;
+    }
+    #contact h1::after{
+        left: 39.3%;
+    }            
+}
+@media (max-width:568px) {         
+    #About h1::after {
+        left: 40.7%;
+    }
+    .pic{
+        margin-left: 13%;
+    }
+    #Services h1::after {            
+        left: 37.5%;            
+    }
+    #Skills h1::after {            
+        left: 39.2%;            
+    }
+    .line-html{            
+        width: 380px;
+    }
+    .line-html::before{            
+        width: 342px;            
+    }
+    .line-css{            
+        width: 380px;            
+    }
+    .line-css::before{
+        width: 323px;
+    }
+    .line-bootstrap{
+        width: 380px;
+    }
+    .line-bootstrap::before{
+        width: 323px;
+    }
+    .line-java{
+        width: 380px;
+    }
+    .line-java::before{
+        width: 304px;
+    }
+    .line-phython{
+        width: 380px;
+    }
+    .line-phython::before{
+        width: 247px;
+    }
+    #Project h1::after{
+        left: 42%;
+    }
+    #contact h1::after{
+        left: 38.5%;
+    }            
+}
+@media (max-width:486px) {         
+    #About h1::after {
+    left: 39.3%;
+    }
+    .pic{
+        margin-left: 0%;
+    }
+    #Services h1::after {            
+    left: 35.4%;            
+    }
+    #Skills h1::after {            
+    left: 37.2%;            
+    }
+    .line-html{            
+    width: 290px;
+    }
+    .line-html::before{            
+        width: 261px;            
+    }
+    .line-css{            
+        width: 290px;            
+    }
+    .line-css::before{
+        width: 246.5px;
+    }
+    .line-bootstrap{
+        width: 290px;
+    }
+    .line-bootstrap::before{
+        width: 246.5px;
+    }
+    .line-java{
+        width: 290px;
+    }
+    .line-java::before{
+        width: 232px;
+    }
+    .line-phython{
+        width: 290px;
+    }
+    .line-phython::before{
+        width: 188.5px;
+    }
+    #Project h1::after{
+        left: 40.4%;
+    }
+    #contact h1::after{
+        left: 37%;
+    }            
+}
